@@ -1,0 +1,154 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            margin: 30px auto;
+            width: 400px;
+            height: auto;
+            background: rgb(202, 200, 200);
+            border-radius: 10px;
+padding: 2%;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        h3 {
+            border-bottom: 1px solid #bbb;
+            padding-bottom: 5px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 3px;
+        }
+h2{
+    font-weight: bold;
+    margin-top: 3%;
+}
+   h4{
+       font-size: 17px;
+       font-weight: bold;
+      padding-bottom: 0;
+   }   
+
+        .inc-exp-container {
+            background: #fff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.24);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            border-radius: 5px;
+            margin-bottom: 0;
+        }
+
+        .inc-exp-container>div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .inc-exp-container>div:first-of-type {
+            border-right: 1px solid #e2e2e2;
+        }
+
+        .money {
+            font-size: 2;
+            letter-spacing: 1px;
+            margin: 5px;
+        }
+
+        .money-plus {
+            color: #2ecc71;
+        }
+
+        .money-minus {
+            color: #c0392b;
+        }
+
+        input[type="text"],
+        [type="number"] {
+            border: 1px solid #dedede;
+            border-radius: 2px;
+            display: block;
+            font-size: 16px;
+            margin-bottom: 2%;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .transaction {
+            cursor: pointer;
+            background: rgb(105, 4, 114);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: whitesmoke;
+            border: 2px solid rgb(105, 4, 114);
+            display: block;
+            font-size: 18px;
+            margin: 10px 0 30px;
+            padding: 10px;
+            width: 100%;
+            border-radius: 7px;
+        }
+
+        .transaction:focus,
+        delete-btn:focus {
+            outline: 0;
+        }
+
+        .list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        .list li {
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 4px;
+            cursor: pointer;
+        }
+
+        .list li.plus {
+            border-right: 5px solid #2ecc71;
+        }
+
+        .list li.minus {
+            border-right: 5px solid #c0392b;
+        }
+
+        .delete-btn {
+            cursor: pointer;
+            background: #e74c3e;
+            font-size: 15px;
+            color: whitesmoke;
+            border: 0;
+            line-height: 20px;
+            padding: 2px 5px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(-100%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .list li.minus:hover .delete-btn {
+            opacity: 1;
+        }
